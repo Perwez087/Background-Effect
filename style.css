@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url(https://i.pinimg.com/originals/12/e5/be/12e5bee0eed5a28b3e192270f074d470.jpg);
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.container h1 {
+    display: flex;
+    position: absolute;
+    top: 35%;
+    left: 33%;
+    background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
+    background-size: 400%;
+    font-size: 80px;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    font-weight: 600;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+}
+
+.head h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 22px;
+}
+
+.head p {
+    margin: 20px;
+    font-style: italic;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.image {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image img {
+    width: 30%;
+}
+@media (max-width:600px){
+ .container h1{
+     left: 53px !important;
+     font-size: 61px !important;
+ }
+ .head p{
+     margin: 24px !important;
+ }
+ .image{
+     display: block;
+ }
+ .image img{
+     display: block;
+     padding-left: 10px !important;
+     margin: 40px !important;
+     width: 80% !important;
+
+ }
+}
